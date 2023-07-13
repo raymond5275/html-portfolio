@@ -1,19 +1,3 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,22 +5,81 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style1.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Raymond's Portfolio</title>
   </head>
   <body>
-    <h1>Hi I am Goh Kah Jin! Welcome to my portfolio !</h1>
-    <p>
-      Graduate with Chemical Engineering in 2020 and very passionate in coding.
-      Travelling while working is my dream
-    </p>
-    <hr />
-    <a href="./public/pigGame/index.html">Dice Game's Project</a> <br />
-    <img src="./public/pigGame/pigGameInterface.png" width="500" />
-
-    <div>
-      <h1>Working Experiences</h1>
-      <h2>Ac</h2>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Goh Kah Jin' Portfolio</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#aboutMe" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#achievement" class="nav-link">Achievement</a></li>
+          <li class="nav-item"><a href="#workingExperience" class="nav-link">Working Experiences</a></li>
+          <li class="nav-item"><a href="#codingProjects" class="nav-link">Coding Projects</a></li>
+      </header>
     </div>
-    
-  </body>
+    <h1 id="aboutMe">About Me</h1>
+    <p class="introduction">
+      Graduate with degree of Chemical Engineering in 2020 and very passionate in coding
+    </p>
+    <div><img class="university" src="./ump.png" alt="university logo"></div>
+    <hr/>
+    <div>
+      <h1 id="achievement">Achievement</h1>
+      <ul>
+        <li><a class="btn btn-outline-primary" href="https://www.linkedin.com/posts/goh-kah-jin-571b0b20a_siemens-plctraining-activity-6991824234771611648-_ptV?utm_source=share&utm_medium=member_desktop">Certified Siemense TIA Portal Service 1 and Service 2 Programme (Certified date: August 2022)</a></li>
+        <li><a class="btn btn-outline-primary" href="https://www.linkedin.com/posts/goh-kah-jin-571b0b20a_congratulations-to-all-my-team-members-we-activity-6955301943883837440-T-w7?utm_source=share&utm_medium=member_desktop">Champion TGYLS 2022 (Top Glove Young Leadership Summit)</a></li>
+        <li><a class="btn btn-outline-primary" href="https://topglove.com/home">Promoted from Junior Engineer to Engineer in Top Glove FY2021/2022</a></li>
+        <li><a class="btn btn-outline-primary" href="https://admission.ump.edu.my/undergraduate-study/engineering/02-b-eng-hons-chemical-engineering">5 times Dean List award in University (Grade: Second Upper Class)</a></li>
+      </ul>
+    </div>
+    <hr/>
+
+    <h1 id="workingExperience">Working Experiences</h1>
+    </div>
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./fsbm.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Automation and Engineering Solution Engineer</h6>
+            <p class="mb-0 opacity-75">FSBM MES ELITE Sdn Bhd</p>
+          </div>
+          <small class="opacity-50 text-nowrap">Nov 2022 until current</small>
+        </div>
+      </a>
+      <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="./topglove.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Automation Engineer & Head of Research and Development</h6>
+            <p class="mb-0 opacity-75">Top Glove Corporation</p>
+          </div>
+          <small class="opacity-50 text-nowrap">Sep 2020 to Oct 2022</small>
+        </div>
+      </a>
+      <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="/topglove.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Production Trainee</h6>
+            <p class="mb-0 opacity-75">Top Glove Corporation</p>
+          </div>
+          <small class="opacity-50 text-nowrap">Jun 2019 to Sep 2019</small>
+        </div>
+      </a>
+    </div>
+  </div>
+  <hr/>
+
+  <div>
+    <h1 id="codingProjects">Coding Projects</h1>
+    <a href="./public/pigGame/index.html">PROJECT 1: Dice Game's Project</a><br />
+    <img class="project1" src="./public/pigGame/pigGameInterface.png" width="500" />
+  </div>
 </html>
