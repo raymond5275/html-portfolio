@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style1.css" />
+    <!-- <link rel="stylesheet" href="style1.css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
       h1 {
@@ -12,32 +12,44 @@
     text-align: center;
     font-weight: bolder;
 
-}
+    }
 
-.introduction {
+    .introduction {
     text-align: center;
     font-size: larger;
-}
+    margin-left: 20%;
+    margin-right: 20%;
+      }
 
-ul {
+    ul {
     list-style: none;
     text-align: center;
-}
+    }
 
-.university {
-    width: 10%;
-    margin-left: 45%;
-}
+    .university {
+    width: 30%;
+    margin-left: 0%;
+    }
 
-li {
+    li {
     margin-top: 2%;
-}
+    }
 
-.project1 {
+    .project1 {
     width: 20%;
     margin-left: 40%;
     margin-bottom: 20%;
-}
+    }
+
+    title {
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .profile {
+    width: 10%;
+    margin-left: 33%;
+    }
     </style>
     <title>Raymond's Portfolio</title>
   </head>
@@ -58,9 +70,9 @@ li {
     </div>
     <h1 id="aboutMe">About Me</h1>
     <p class="introduction">
-      Graduate with degree of Chemical Engineering in 2020 and very passionate in coding
+      Highly skilled manufacturing professional with 3 years' experiences. Involved in MES and ERP implementation, automation manufacuring processes , new product development and project management. Second upper class chemical engineering graduate in 2020.
     </p>
-    <div><img class="university" src="./ump.png" alt="university logo"></div>
+    <img class="profile" src="./assets/images/profile pictures.jpg" alt="university logo"><img class="university" src="./assets/images/ump.jpg" alt="university logo">
     <hr/>
     <div>
       <h1 id="achievement">Achievement</h1>
@@ -76,8 +88,8 @@ li {
     <h1 id="workingExperience">Working Experiences</h1>
     </div>
     <div class="list-group">
-      <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="./fsbm.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+      <a class="list-group-item list-group-item-action d-flex gap-3 py-3" href="./FSBM.html" aria-current="true">
+        <img src="./assets/images/fsbm.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">Automation and Engineering Solution Engineer</h6>
@@ -86,8 +98,8 @@ li {
           <small class="opacity-50 text-nowrap">Nov 2022 until current</small>
         </div>
       </a>
-      <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="./topglove.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+      <a class="list-group-item list-group-item-action d-flex gap-3 py-3" href="./topglove.html" aria-current="true">
+        <img src="./assets/images/topglove.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">Automation Engineer & Head of Research and Development</h6>
@@ -97,7 +109,7 @@ li {
         </div>
       </a>
       <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <img src="/topglove.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+        <img src="/assets/images/topglove.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">Production Trainee</h6>
@@ -112,7 +124,144 @@ li {
 
   <div>
     <h1 id="codingProjects">Coding Projects</h1>
-    <a href="./public/pigGame/index.html">PROJECT 1: Dice Game's Project</a><br />
-    <img class="project1" src="./public/pigGame/pigGameInterface.png" width="500" />
-  </div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/Flexbox.png">
+        <div class="card-body">
+          <p class="card-text"><h6>Flexbox Pricing</h6>Skills Applied: HTML,CSS (Flexbox)</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/FlexboxPricingTableProject/index.html">View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/fundamental.png">
+        <div class="card-body">
+          <p class="card-text"><h6>Fundamental Project</h6>Skills Applied: HTML,CSS, Javascript</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/FundamentalProject/index.html">View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/guessMyNumber.png">
+        <div class="card-body">
+          <p class="card-text"><h6>Guess My Number</h6>Skills Applied: Javascript,HTML,CSS</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/GuessMyNumber/index.html">View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/Modal.png">
+        <div class="card-body">
+          <p class="card-text"><h6>Modal</h6>Skills Applied: Javascript,HTML,CSS</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/Modal/index.html">View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/Modrian.png">
+        <div class="card-body">
+          <p class="card-text"><h6>Mondrian Project</h6>Skills Applied: CSS (Grid), HTML</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/MondrianProject/index.html" >View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/Motivation.png">
+        <div class="card-body">
+          <p class="card-text"><h6>Motivation Poster</h6>Skills Applied: HTML,CSS</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/MotivationPoster/index.html">View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/pigGame.png">
+        <div class="card-body">
+          <p class="card-text"><h6>Pig Game</h6>Skills Applied: Javascript,HTML,CSS</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/pigGame/index.html" >View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/Tinted.png">
+        <div class="card-body">
+          <p class="card-text"><h6>TinDog Web</h6>Skills Applied: HTML,CSS, Bootstrap</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/TinDogProject/index.html">View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="./assets/images/webdesign.png">
+        <div class="card-body">
+          <p class="card-text"><h6>Website Design</h6>Skills Applied: HTML,CSS (Flexbox)</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="./public/WebDesignAgencyProject/index.html">View</a>
+            </div>
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 </html>
